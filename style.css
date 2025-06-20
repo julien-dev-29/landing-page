@@ -1,0 +1,68 @@
+:root {
+  --bg-dark: #1f2937;
+  --hero-main-fs: 48px;
+  --hero-main-color: #f9faf8;
+  --hero-main-fw: 900;
+  --text-secondary-color: #e5e7eb;
+  --btn-color: #3882f6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.container {
+  max-width: 1020px;
+  margin: auto;
+}
+
+/* Header:  */
+
+.header {
+  padding: 24px;
+  background-color: var(--bg-dark);
+  color: var(--hero-main-color);
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header a {
+  color: var(--text-secondary-color);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.4rem;
+}
+
+/* Hero: */
+
+#hero {
+  background-color: var(--bg-dark);
+  color: var(--hero-main-color);
+}
+
+.hero {
+  display: flex;
+}
+
+.left {
+}
