@@ -67,10 +67,13 @@ body {
   background-color: var(--bg-dark);
   background-size: cover;
   color: var(--hero-main-color);
-  display: flex;
-  justify-content: space-between;
   gap: 2.5rem;
   padding: 138px;
+}
+
+.hero {
+  display: flex;
+  gap: 4rem;
 }
 
 .hero h1 {
