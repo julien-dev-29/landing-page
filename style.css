@@ -24,7 +24,8 @@ body {
 
 .container {
   max-width: 1020px;
-  margin: auto;
+  width: 100%;
+  margin-inline: auto;
 }
 
 /* Header:  */
@@ -64,14 +65,12 @@ body {
 
 #hero {
   background-color: var(--bg-dark);
+  background-size: cover;
   color: var(--hero-main-color);
-  padding: 138px;
-}
-
-.hero {
   display: flex;
   justify-content: space-between;
   gap: 2.5rem;
+  padding: 138px;
 }
 
 .hero h1 {
@@ -91,13 +90,23 @@ body {
 }
 
 .btn {
-  margin-top: 16px;
   border: none;
+  margin-top: 16px;
+  outline: transparent;
   border-radius: 8px;
   padding: 8px 35px;
   background-color: var(--btn-color);
   font-size: 18px;
   color: var(--text-secondary-color);
+}
+
+#call-to-action .btn {
+  color: var(--text-secondary-color);
+  outline: 1px solid var(--text-secondary-color);
+}
+
+.btn:hover {
+  background-color: #4188fc;
 }
 
 /* Information: */
@@ -120,6 +129,13 @@ body {
   box-shadow: 1px 3px 10px 1px rgb(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
+  transition: 0.5s;
+}
+
+.info-item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 1px 3px 10px 1px rgb(0, 0, 0, 0.2);
 }
 
 .info-item img {
@@ -151,4 +167,26 @@ body {
   font-size: var(--header-text-fs);
   font-weight: var(--fw-900);
   padding-bottom: 106px;
+}
+
+/* Call to action: */
+
+.call-to-action {
+  margin-top: 98px;
+  margin-bottom: 98px;
+  padding: 52px 122px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--btn-color);
+  color: var(--text-secondary-color);
+  border-radius: 8px;
+}
+
+/* Footer: */
+
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  background-color: var(--bg-dark);
+  color: var(--text-secondary-color);
 }
