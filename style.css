@@ -1,10 +1,14 @@
 :root {
   --bg-dark: #1f2937;
   --hero-main-fs: 48px;
+  --header-text-fs: 24px;
+  --information-text-fs: 36px;
   --hero-main-color: #f9faf8;
-  --hero-main-fw: 900;
+  --fw-900: 900;
   --text-secondary-color: #e5e7eb;
   --btn-color: #3882f6;
+  --quote-bg-color: #e5e7eb;
+  --quote-text-color: #1f2937;
 }
 
 * {
@@ -26,16 +30,19 @@ body {
 /* Header:  */
 
 .header {
-  padding: 24px;
+  padding: 16px;
   background-color: var(--bg-dark);
   color: var(--hero-main-color);
-  font-size: 24px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navbar-logo {
+  font-size: var(--header-text-fs);
+  font-weight: var(--fw-900);
 }
 
 .header ul {
@@ -58,11 +65,90 @@ body {
 #hero {
   background-color: var(--bg-dark);
   color: var(--hero-main-color);
+  padding: 138px;
 }
 
 .hero {
   display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
 }
 
-.left {
+.hero h1 {
+  font-size: var(--hero-main-fs);
+  font-weight: var(--fw-900);
+  line-height: 1.2;
+}
+
+.hero p {
+  margin-top: 8px;
+  letter-spacing: 1px;
+  color: var(--text-secondary-color);
+}
+
+.hero img {
+  flex-shrink: 0;
+}
+
+.btn {
+  margin-top: 16px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 35px;
+  background-color: var(--btn-color);
+  font-size: 18px;
+  color: var(--text-secondary-color);
+}
+
+/* Information: */
+
+.information-title {
+  margin-top: 52px;
+  margin-bottom: 56px;
+  font-size: var(--information-text-fs);
+  font-weight: var(--fw-900);
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 124px;
+}
+
+.info-item {
+  box-shadow: 1px 3px 10px 1px rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.info-item img {
+  height: 150px;
+  width: 100%;
+}
+
+.info-item p {
+  padding: 16px;
+}
+
+.text-info {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Quote: */
+
+#quote {
+  padding-top: 136px;
+  background-color: var(--quote-bg-color);
+  color: var(--quote-text-color);
+  font-size: var(--information-text-fs);
+  font-weight: lighter;
+}
+
+.text-left {
+  text-align: right;
+  font-size: var(--header-text-fs);
+  font-weight: var(--fw-900);
+  padding-bottom: 106px;
 }
