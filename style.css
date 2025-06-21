@@ -1,13 +1,14 @@
 :root {
-  --bg-dark: #1f2937;
+  --bg-dark: #111c1b;
   --hero-main-fs: 48px;
   --header-text-fs: 24px;
   --information-text-fs: 36px;
   --hero-main-color: #f9faf8;
   --fw-900: 900;
-  --text-secondary-color: #e5e7eb;
-  --btn-color: #3882f6;
-  --quote-bg-color: #e5e7eb;
+  --text-secondary-color: #adb5b2;
+  --btn-color: #12a594;
+  --btn-hover-color: #0eb39e;
+  --quote-bg-color: #dfe2e0;
   --quote-text-color: #1f2937;
 }
 
@@ -56,6 +57,11 @@ body {
   text-decoration: none;
 }
 
+.header a:hover {
+  color: #0bd8b6;
+  text-decoration: underline;
+}
+
 .navbar-links {
   display: flex;
   gap: 1.4rem;
@@ -100,16 +106,16 @@ body {
   padding: 8px 35px;
   background-color: var(--btn-color);
   font-size: 18px;
-  color: var(--text-secondary-color);
+  color: white;
 }
 
 #call-to-action .btn {
-  color: var(--text-secondary-color);
-  outline: 1px solid var(--text-secondary-color);
+  color: white;
+  outline: 1px solid white;
 }
 
 .btn:hover {
-  background-color: #4188fc;
+  background-color: var(--btn-hover-color);
 }
 
 /* Information: */
@@ -160,7 +166,7 @@ body {
 #quote {
   padding-top: 136px;
   background-color: var(--quote-bg-color);
-  color: var(--quote-text-color);
+  color: #63635e;
   font-size: var(--information-text-fs);
   font-weight: lighter;
 }
@@ -181,7 +187,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: var(--btn-color);
-  color: var(--text-secondary-color);
+  color: white;
   border-radius: 8px;
 }
 
