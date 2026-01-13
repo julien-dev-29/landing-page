@@ -5,79 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Landing Page</title>
+    <meta name="description"
+        content="Une landing page claire présentant notre produit — inscription rapide, bénéfices et témoignages.">
+    <link rel="canonical" href="https://example.com/">
+    <link rel="icon" href="/favicon.ico">
+    <title>Homepage</title>
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Sauter au contenu</a>
     <header class="header">
         <div class="navbar container">
             <div class="navbar-logo">Julien Rolland</div>
             <nav>
                 <ul class="navbar-links">
-                    <li><a href="#information">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#footer">Link 3</a></li>
+                    <li><a href="#information">Fonctionnalités</a></li>
+                    <li><a href="#call-to-action">Tarifs</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section id="hero">
-        <div class="hero container">
-            <div>
-                <h1>This website is awesome</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur incidunt dicta in culpa.
-                    Voluptatibus
-                    dolorem laborum ducimus nesciunt perspiciatis, debitis veritatis maiores omnis illo necessitatibus.
-                </p>
-                <button class="btn">Sign up</button>
+    <main id="main">
+        <section id="hero">
+            <div class="hero container">
+                <div>
+                    <h1>Gérez mieux votre temps — gagnez en productivité</h1>
+                    <p>Notre outil vous aide à prioriser vos tâches, réduire les interruptions et retrouver du temps
+                        chaque jour. Interface simple, synchronisation multi‑appareils et tableaux clairs pour mesurer
+                        vos progrès.</p>
+                    <button class="btn">Commencer</button>
+                </div>
+                <picture>
+                    <img src="assets/images/hero-image.png" width="530" height="350" alt="Visuel du produit"
+                        loading="eager" decoding="async" fetchpriority="high">
+                </picture>
             </div>
-            <img src="assets/images/hero-image.png" width="530" alt="hero image">
-        </div>
-    </section>
-    <section id="information">
-        <h2 class="information-title">Some random information.</h2>
-        <div class="info-container container">
-            <article class="info-item">
-                <img src="https://placehold.co/160x160" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quos minima ipsam pariatur nam
-                    eius!</p>
-            </article>
-            <article class="info-item">
-                <img src="https://placehold.co/160x160" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quos minima ipsam pariatur nam
-                    eius!</p>
-            </article>
-            <article class="info-item">
-                <img src="https://placehold.co/160x160" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quos minima ipsam pariatur nam
-                    eius!</p>
-            </article>
-            <article class="info-item">
-                <img src="https://placehold.co/160x160" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quos minima ipsam pariatur nam
-                    eius!</p>
-            </article>
-        </div>
-    </section>
-    <section id="quote">
-        <div class="container">
-            <cite>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat id consequuntur sapiente ducimus,
-                harum
-                mollitia molestias vel molestiae eos repellendus sint tenetur officia unde quis. Vero doloremque error
-                rerum
-                eos minus at ipsum blanditiis quibusdam!</cite>
-            <div class="text-left"> -Thor, God of Thunder</div>
-        </div>
-    </section>
-    <section id="call-to-action">
-        <article class="call-to-action container">
-            <div class="flex-left">
-                <h2>Call to action! It's time!</h2>
-                <p>Sign up for our product by clicking right over here!</p>
+        </section>
+        <section id="information">
+            <h2 class="information-title">Fonctionnalités clés</h2>
+            <div class="info-container container">
+                <article class="info-item">
+                    <picture>
+                        <img src="https://placehold.co/160x160" alt="Illustration du point 1" width="160" height="160"
+                            loading="lazy" decoding="async">
+                    </picture>
+                    <p>Planification intelligente : organisez vos journées en quelques clics et concentrez-vous sur
+                        l'essentiel.</p>
+                </article>
+                <article class="info-item">
+                    <picture>
+                        <img src="https://placehold.co/160x160" alt="Illustration du point 2" width="160" height="160"
+                            loading="lazy" decoding="async">
+                    </picture>
+                    <p>Rappels personnalisés : ne manquez plus aucune échéance grâce à des notifications intelligentes.
+                    </p>
+                </article>
+                <article class="info-item">
+                    <picture>
+                        <img src="https://placehold.co/160x160" alt="Illustration du point 3" width="160" height="160"
+                            loading="lazy" decoding="async">
+                    </picture>
+                    <p>Analytique simple : visualisez vos progrès et optimisez vos routines avec des tableaux clairs.
+                    </p>
+                </article>
+                <article class="info-item">
+                    <picture>
+                        <img src="https://placehold.co/160x160" alt="Illustration du point 4" width="160" height="160"
+                            loading="lazy" decoding="async">
+                    </picture>
+                    <p>Travail en équipe : partagez des listes, assignez des tâches et suivez l'avancement facilement.
+                    </p>
+                </article>
             </div>
-            <button class="btn">Sign up</button>
-        </article>
-    </section>
+        </section>
+        <section id="quote">
+            <div class="container">
+                <cite>« Grâce à cet outil, j'ai réduit le temps passé sur mes tâches de 30 % »</cite>
+                <div class="text-left">- Julie, cheffe de projet</div>
+            </div>
+        </section>
+        <section id="call-to-action">
+            <article class="call-to-action container">
+                <div class="flex-left">
+                    <h2>Prêt à essayer ?</h2>
+                    <p>Essayez gratuitement notre outil pendant 7 jours et constatez la différence.</p>
+                </div>
+                <button class="btn">Essayez gratuitement</button>
+            </article>
+        </section>
+    </main>
     <footer class="footer" id="footer">
         <div>Copyright ® The Odin Project 2025</div>
     </footer>
